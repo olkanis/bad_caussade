@@ -1,0 +1,126 @@
+<!--bad_caussade-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Badminton Caussade</title>
+<!--css_link-->
+	<link rel="stylesheet" type="css" href="bad.css">
+<!--bootstrap_link-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--font-awesome_link-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+<!--nav_bar_header-->
+	<header class="nav_bar">
+		<div class="nav_items">
+			<ul>	<!--links to mains titles-->
+				<li><a href="#main_title">vers_h1</a></li>
+				<li><a href="#table">vers table</a></li>
+				<li><a href="#links">vers links</a></li>
+				<li><a href="#map">vers map</a></li>
+			</ul>
+		</div>
+	</header>
+
+<!--Banner-->
+	<div class="banner">
+		<div class="banner_items">
+			<h1 id="main_title">Badminton Club de Caussade</h1>
+				<p class="description">p>Le club de Badminton de Caussade est une association créée en 2005.<br/>Son équipe dynamique de <strong>bénévoles</strong> sera heureuse de vous accueillir pour vous faire partager entraînements et competitions dans le respect mutuel et la bonne humeur.<br/> Alors à très vite!!! 
+				</p>
+		</div>
+	</div>	
+
+<!--table-->
+		<div id="table">
+      		<h2>Nos horaires :</h2>
+      			<div class="table_items"></div>
+    				<table>
+      					<caption>Le club vous propose</caption>
+     						<thead>
+       							<tr>
+        					  		<th>Jour</th>
+         					  		<th>Horaires</th>
+         					  		<th>Prestations</th>
+         					  		<th>Entraineur</th>
+       							</tr>
+     						</thead>
+     						<tbody> 
+       							<tr>
+         					  		<td>Lundi</td>
+         					  		<td>19h/20h30</td>
+        					  		<td>Jeu libre</td>
+         					 		<td>Néant</td>
+       					 		</tr>
+        						<tr>
+         					  		<td>Mardi</td>
+         					  		<td>19h/20h30</td>
+         					  		<td>Entrainement enfants/ados</td>
+         					 		<td>Delbes Sébastien Basck Eric Fedou Caroline</td>
+       							</tr>
+        						<tr>
+        					  		<td>Jeudi</td>
+         					  		<td>19h15/20h00 et 20h/22h30</td>
+         					  		<td>Initiation adultes au 1er trimestre et jeu libre</td>
+         					  		<td>Joueurs confirmés présents</td>
+       							</tr>
+        						<tr>
+         					  		<td>Dimanche</td>
+         					  		<td>10h/12h00</td>
+         					  		<td>Jeu libre si ouverture du gymnase</td>
+         					  		<td>Néant</td>
+       							</tr>
+     						</tbody> 
+    				</table>
+    			</div>	
+		</div>
+
+<!--links-->
+		<div id="links">			
+			<div class="links_items">
+				<h2>Liens utiles:</h2>		
+					<ul>
+         				<li><a href="https://www.facebook.com/badmintoncaussadais" title="Notre page facebook" target="_blank">Rejoignez nous sur notre page  <img src="facebook_1.jpg" alt="facebook" /></a></li>
+
+         				<li><a href="https://badmania.fr/" target="_blank">Badmania <img src="badmania.png" alt="badmania"></a></li>
+
+                    	<li><a href="https://www.sport2000.fr/" target="_blank">Sport2000 <img src="sport2000.png" alt="sport2000"></a></li>
+
+        				<li><a href="http://www.ffbad.org/"  title="fédération française badminton" target="_blank">FFBaD <img src="ffbad_logo_1.jpg" alt="ffbad"/></a></li>
+        			</ul>
+        	</div>	
+		</div>
+
+<!--map-->
+		<div id="map">
+			<div class="map_items">
+				<h2>Plan du site et accés :</h2>
+  					<a href="plan_gymnase1.png"><img src="plan_gymnase.png" alt="plan"title="cliquez pour agrandir"/></a>
+  			</div>
+		</div>
+
+<!--std_footer--> 
+		<footer class="footer">
+			<p>Olkanis® copiright© 2019</p>
+		</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<script>
+	var nav_bar = document.querySelector("#siteWrapper nav_bar");
+	function scrolled(){
+		var windowHeight = document.body.clientHeight,
+			currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		nav_bar.className = (currentScroll >= windowHeight - nav_bar.offsetHeight) ? "fixed" : "";
+	}
+	addEventListener("scroll", scrolled, false);
+	</script>
+
+</body>
+
+</html>
