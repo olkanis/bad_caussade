@@ -107,20 +107,6 @@
 		<footer class="footer">
 			<p>Olkanis® copiright© 2019</p>
 		</footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-	<script>
-	var nav_bar = document.querySelector("#siteWrapper nav_bar");
-	function scrolled(){
-		var windowHeight = document.body.clientHeight,
-			currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
-		nav_bar.className = (currentScroll >= windowHeight - nav_bar.offsetHeight) ? "fixed" : "";
-	}
-	addEventListener("scroll", scrolled, false);
-	</script>
-
 </body>
 
 </html>
